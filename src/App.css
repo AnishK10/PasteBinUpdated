@@ -1,0 +1,239 @@
+:root {
+  --black: #161a2b;
+  --white: #ffffff;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(74, 57, 189);
+  background-image: linear-gradient(to right,
+  rgba(48, 16, 255, 1) 0%,
+  rgb(206, 116, 74) 21%,
+  rgb(219, 74, 74) 50%,
+  rgb(207, 61, 200) 79%,
+  rgba(48, 16, 255, 1) 100%
+  );
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(214, 99, 46);
+  background-image: linear-gradient(to bottom,
+  rgba(48, 16, 255, 1) 0%,
+  rgb(206, 116, 74) 28%,
+  rgb(219, 74, 74) 50%,
+  rgb(207, 61, 200) 72%,
+  rgba(48, 16, 255, 1) 100%
+  );
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(219, 74, 74);
+}
+
+::-webkit-scrollbar-corner{
+  background-color: transparent;
+}
+
+/* Navbar */
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+
+/* Blog */
+
+
+.blog-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: rgba(255, 84, 17, 1);
+	letter-spacing: 1px;
+	padding: 10px 15px;
+}
+
+
+.blog-para {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+  font-size: 20px;
+  color: #ffffff;
+  opacity: 0.9;
+  padding: 6px 30px;
+	letter-spacing: 2px;
+}
+
+
+.redirect-button{
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px auto;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+}
+
+
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
+.todo-form {
+  margin-bottom: 32px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.edit-form{
+  margin-bottom: 15px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 70%;
+  background: transparent;
+  color: #fff;
+}
+
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+
+.todo-button.edit {
+  padding: 16px 22px;
+}
+
+/* Paste Bin */
+
+.pastebin-text {
+  position: fixed;
+  display: flex;
+  background: transparent;
+  width: 99%;
+  height: 95%;
+  /* height: 91vh; */
+  border: 2.5px solid rgba(17, 122, 255, 1);
+  /* border-top: none; */
+  resize: none;
+  padding: 9px;
+  color: rgb(82, 192, 31);
+  outline: none;
+  line-height: 105%;
+  /* font-size: 13px;  */
+}
+
+
+.pastebin-controls{
+  position: fixed;
+  display: flex;
+  right: 2%;
+  bottom: 7%;
+  z-index: 1;
+  /* padding-right: 10px; */
+  margin: auto;
+  justify-content: flex-end;
+  align-items: right;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.save-share-pastebin{
+  display: flex;
+  padding: 12px;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin-right: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1)0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.recent-pastebin{
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  word-break: break-all;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  margin: 5px;
+  width: 230px;
+  max-width: 230px;
+  text-align: left;
+  align-items: center;
+  vertical-align: middle;
+  background: linear-gradient(
+    90deg,
+    rgb(9, 148, 248) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  animation: fadeIn 0.7s 1;
+}
+
+.recent-pastebin-outer{
+  display: inline-table;
+  max-width: 500px;
+  padding-bottom: 30px;
+}
+
+.canvas-controls{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.canvas-brush-size{
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 80px;
+  background: transparent;
+  color: #fff;
+}
+
+
+.canvas-div{
+  display: inline-flex;
+  position: relative;
+  border: 2.5px solid rgba(17, 122, 255, 1);
+}
+
+
